@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <conio.h>
+float w ;
+float h ;
+int  age ;
+char name ;
+char male ;
+float bmr ;
+main()
+{
+	printf("\n\n\n\n\n\t\t\t\tCreat by kon kean Program");
+	printf("\n\t\t\t\tProgramn find the value of BMR");
+	printf("\n\t\t\t\tWhat is your name : ");
+	scanf("%c",&name);
+	printf("\n\t\t\t\t\tHow old are you :");
+	scanf("%d",&age);
+	printf("\n\t\tInput your weight(kilograms): ");
+	scanf ("%f",&w);
+	printf("\n\t\t\t\tInput your hight (centimeters): ");
+	scanf ("%f",&h);
+	printf ("\n\tIf you male put '1' but you female put '2' :" );
+	scanf ("%d",&male);
+   if (male==1)
+    {
+  	     bmr=10*w+6.25*h-5*age+5;
+  	     printf ("\n\t\t\t\tYour BMR : %.2f",bmr);
+    }
+    else 
+	{
+         bmr=(10*w)+(6.25*h)-(5*age)-161;
+	     printf("\n\t\t\t\tYour BMR : %.2f",bmr);
+     }    
+    printf("\n\t\t\t\t\t!!Good BYE!!");
+    getch();
+}
